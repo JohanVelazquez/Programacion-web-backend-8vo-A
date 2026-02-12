@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Formulario de contacto</title>
+
+</head>
+
+<body>
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h1>Contáctanos</h1>
+        <div class="content">
+          <form action="formulario.php" method="POST">
+            <div class="nombre">
+              <label for="nombre">Nombre <span>*</span></label>
+              <input required type="text" name="nombre" id="nombre">
+            </div>
+            <div class="apellido">
+              <label for="apellido">Apellido <span>*</span></label>
+              <input required type="text" name="apellido" id="apellido">
+            </div>
+            <div class="email">
+              <label for="email">Dirección de correo electrónico <span>*</span></label>
+              <input required type="email" name="email" id="email">
+            </div>
+            <div class="tipo_consulta">
+              <p>Tipo de consulta <span>*</span></p>
+              <div class="consulta">
+                <input type="radio" value="consulta general" name="tipo_consulta" id="consulta_general">
+                <label for="consulta general">Consulta general</label>
+              </div>
+              <div class="consulta">
+                <input type="radio" value="solicitud_soporte" name="tipo_consulta" id="solicitud_soporte">
+                <label for="solicitud_soporte">Solicitud de soporte</label>
+              </div>
+            </div>
+            <div class="mensaje">
+              <label for="mensaje">Mensaje <span>*</span></label>
+              <textarea required name="mensaje" id="mensaje"></textarea>
+            </div>
+            <div class="consentimiento">
+              <input type="checkbox" name="consentimiento" id="consentimiento">
+              <label for="consentimiento">Autorizó para ser contactado por el equipo <span>*</span></label>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="autor">
+    <p>
+      Formulario de contacto © 2026 ·
+      Desarrollado por <a href="#">Johan Andres Velazquez Caamal</a>
+    </p>
+  </footer>
+</body>
+<script src="./scripts.js"></script>
+
+
+<!-- </head>
+<body>
+
+Contáctanos
+
+Nombre
+Este campo es obligatorio
+
+Apellido
+Este campo es obligatorio
+
+Dirección de correo electrónico
+Por favor, introduce una dirección de correo electrónico válida
+Este campo es obligatorio
+
+Tipo de consulta
+Consulta general
+Solicitud de soporte
+Por favor, selecciona un tipo de consulta
+
+Mensaje
+Este campo es obligatorio
+
+Autorizó para ser contactado por el equipo
+Para enviar este formulario, por favor consiente ser contactado
+
+Enviar
+
+¡Mensaje enviado!
+Gracias por completar el formulario. ¡Nos pondremos en contacto pronto!
+  
+  <div class="autor">
+    Formulario de contacto @2025</a>. 
+    Desarrollado por <a href="#">Tu nombre</a>.
+  </div>
+</body> -->
+
+</html>
