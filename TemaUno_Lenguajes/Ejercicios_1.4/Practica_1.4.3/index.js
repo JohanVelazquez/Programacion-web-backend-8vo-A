@@ -13,7 +13,7 @@ console.log(__dirname);
 const app = express();
 const port = 3000;
 
-// Middleware de body-parser para procesar formularios
+// Middleware de body-parser para procesar formularios, leer los datos para el servidor
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Servir el formulario index.html
