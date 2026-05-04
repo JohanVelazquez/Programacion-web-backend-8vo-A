@@ -23,8 +23,6 @@ app.post('/usuarios', async (req, res) => {
   }
 });
 
-
-
 app.get('/', (req, res) => {
     res.send('Bienvenido a mi API CRUD');
 });
