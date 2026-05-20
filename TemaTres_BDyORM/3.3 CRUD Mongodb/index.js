@@ -29,7 +29,7 @@ async function conectarDB() {
 conectarDB();
 
 
-// RUTA PRINCIPAL
+
 app.get('/', (req, res) => {
   res.send('API CRUD funcionando');
 });
@@ -127,7 +127,6 @@ app.delete('/usuarios/:id', async (req, res) => {
 });
 
 
-// ARRANCAR SERVIDOR
 app.listen(puerto, () => {
   console.log(`Servidor escuchando en http://localhost:${puerto}`);
 });
